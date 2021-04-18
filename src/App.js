@@ -1,8 +1,11 @@
-import './App.scss';
+import './App.scss'
+import WorkArea from './components/WorkArea'
 
 const App = () => {
   return (
-    <div></div>
+    <div className={'app-container'}>
+      <WorkArea />
+    </div>
     )
 }
 
