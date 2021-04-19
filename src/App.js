@@ -1,10 +1,15 @@
 import './App.scss'
 import WorkArea from './components/WorkArea'
 
+// temporary for debugging
+const settings = {
+  timeSignatureCode: 5
+}
+
 const App = () => {
   return (
     <div className={'app-container'}>
-      <WorkArea />
+      <WorkArea settings={settings} />
     </div>
     )
 }

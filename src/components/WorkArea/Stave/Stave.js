@@ -1,9 +1,10 @@
 import './Stave.scss'
 import STAVE_SIZES from '../../../utility/constants/stave-sizes'
-import BlankSpace from './BlankSpace'
+import NotationLines from '../NotationLines'
 import BarLine from './BarLine'
+import Clefs from './Clefs'
 
-const Stave = (keySignature, timeSignature) => {
+const Stave = ({ keySignature, timeSignature }) => {
 
   const getStaveStyle = () => {
     const {LINE_THICKNESS, STAVE_HEIGHT, STAVE_WIDTH} = STAVE_SIZES
@@ -16,7 +17,12 @@ const Stave = (keySignature, timeSignature) => {
 
   return (
     <div className={'stave-container'} style={getStaveStyle()}>
-
+      <div className={'notation-lines'}>
+        <NotationLines />
+      </div>
+      <Clefs />
+      {timeSignature}
+      {keySignature}
     </div>
   )
 

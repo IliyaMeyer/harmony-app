@@ -1,3 +1,9 @@
 .stave-container {
   border-style: solid;
+  padding: 20px;
+  display: flex;
+}
+
+.notation-lines {
+  position: absolute;
 }
