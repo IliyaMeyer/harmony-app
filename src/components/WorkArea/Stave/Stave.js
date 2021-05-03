@@ -3,8 +3,9 @@ import STAVE_SIZES from '../../../utility/constants/stave-sizes'
 import NotationLines from '../NotationLines'
 import BarLine from './BarLine'
 import Clefs from './Clefs'
+import NotePit from './NotePit/NotePit'
 
-const Stave = ({ keySignature, timeSignature }) => {
+const Stave = ({ keySignature, timeSignature, bars, pitLength }) => {
 
   const getStaveStyle = () => {
     const {LINE_THICKNESS, STAVE_HEIGHT, STAVE_WIDTH} = STAVE_SIZES
@@ -23,6 +24,11 @@ const Stave = ({ keySignature, timeSignature }) => {
       <Clefs />
       {timeSignature}
       {keySignature}
+      <BarLine />
+      {bars.map((bar) => {
+        return <NotePit pitLength={pitLength} bar={bar} />
+      })}
+      <BarLine />
     </div>
   )
 
@@ -30,7 +36,7 @@ const Stave = ({ keySignature, timeSignature }) => {
 
 Stave.defaultProps = {
   timeSignature: <div />,
-  keySignature: <div />
+  keySignature: <div />,
 }
 
 export default Stave

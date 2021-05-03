@@ -3,7 +3,7 @@ const STAVE_SIZES = () => {
 
   const lineThickness = 2
   const spaceThickness = 12
-  const staveWidth = 1000
+  const staveWidth = 1500
 
   const spacesInBlankSpace = 6
 

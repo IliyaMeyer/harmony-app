@@ -16,7 +16,15 @@ const IMAGE_PATHS = () => {
       '/assets/time-signatures/time-signature-6_8.PNG',
       '/assets/time-signatures/time-signature-9_8.PNG',
       '/assets/time-signatures/time-signature-12_8.PNG',
-    ]
+    ],
+    ACCIDENTALS: {
+      DOUBLE_FLAT: '/assets/accidentals/double-flat.png',
+      DOUBLE_SHARP: '/assets/accidentals/double-sharp.png',
+      FLAT: '/assets/accidentals/flat.png',
+      NATURAL: '/assets/accidentals/natural.png',
+      SHARP: '/assets/accidentals/sharp.png'
+    }
+
   }
 
 }
