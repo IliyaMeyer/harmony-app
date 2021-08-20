@@ -23,6 +23,9 @@ const IMAGE_PATHS = () => {
       FLAT: '/assets/accidentals/flat.png',
       NATURAL: '/assets/accidentals/natural.png',
       SHARP: '/assets/accidentals/sharp.png'
+    },
+    CONTENT_PIECES: {
+      SEMIBREVE: '/assets/content-pieces/semibreve.png'
     }
 
   }

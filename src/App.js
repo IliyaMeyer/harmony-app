@@ -14,7 +14,7 @@ const barNotes = [
     {
       Soprano: [
         {
-          value: 1,
+          value: 30,
           length: 1
         }
       ],
@@ -40,7 +40,7 @@ const barNotes = [
     {
       Soprano: [
         {
-          value: 1,
+          value: 8,
           length: 1
         }
       ],
