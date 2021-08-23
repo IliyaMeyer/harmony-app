@@ -14,20 +14,20 @@ const barNotes = [
     {
       Soprano: [
         {
-          value: 30,
+          value: 27,
           length: 1
         }
       ],
       Alto: [
         {
-          value: 1,
-          length: 1
+          value: 30,
+          length: 4
         }
       ],
       Tenor: [
         {
-          value: 1,
-          length: 1
+          value: 12,
+          length: 2
         }
       ],
       Bass: [
@@ -46,7 +46,7 @@ const barNotes = [
       ],
       Alto: [
         {
-          value: 1,
+          value: 34,
           length: 1
         }
       ],

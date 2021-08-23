@@ -25,8 +25,8 @@ const Stave = ({ keySignature, timeSignature, bars, pitLength }) => {
       {timeSignature}
       {keySignature}
       <BarLine />
-      {bars.map((bar) => {
-        return <NotePit pitLength={pitLength} bar={bar} />
+      {bars.map((bar, index) => {
+        return <NotePit pitLength={pitLength} bar={bar} key={index} />
       })}
       <BarLine />
     </div>

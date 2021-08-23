@@ -28,10 +28,10 @@ const Clefs = () => {
   return (
     <div style={getClefContainerStyle()}>
       <div>
-        <img src={getClefImage('treble')} style={getClefStyle('treble')} />
+        <img src={getClefImage('treble')} style={getClefStyle('treble')} alt={'treble clef'} />
       </div>
       <div>
-        <img src={getClefImage('bass')} style={getClefStyle('bass')} />
+        <img src={getClefImage('bass')} style={getClefStyle('bass')} alt={'bass clef'} />
       </div>
     </div>
   )

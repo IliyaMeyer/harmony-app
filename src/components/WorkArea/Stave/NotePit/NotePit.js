@@ -26,17 +26,13 @@ const NotePit = ({ pitLength, bar }) => {
   return (
     <div className={'note-pit-container'} style={getContainerStyle()} >
       <div className={'notes'} >
-        {bar.Soprano.map((note) => {
-          return <div className={'note'} style={getNoteStyle(note)}>
-            <ContentPiece />
-          </div>
+        {Object.values(bar).map((voice, index1) => {
+          return voice.map((note, index2) => {
+            return <div className={'note'} style={getNoteStyle(note)} key={[index1, index2]} >
+              <ContentPiece contentLength={note.length} contentType={note.type} />
+            </div>
+          })
         })}
-      </div>
-      <div className={'notes'} >
-      </div>
-      <div className={'notes'} >
-      </div>
-      <div className={'notes'} >
       </div>
     </div>
   )

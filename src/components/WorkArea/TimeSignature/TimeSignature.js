@@ -19,8 +19,8 @@ const TimeSignature = ({ timeSignatureCode }) => {
 
   return (
     <div className={'time-signature-container'}>
-      <img src={getTimeSignatureImage()} style={getImageStyle()} />
-      <img src={getTimeSignatureImage()} style={getImageStyle()} />
+      <img src={getTimeSignatureImage()} style={getImageStyle()} alt={'time signature'} />
+      <img src={getTimeSignatureImage()} style={getImageStyle()} alt={'time signature'} />
     </div>
   )
 

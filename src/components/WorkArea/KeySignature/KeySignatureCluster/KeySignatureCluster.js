@@ -11,8 +11,8 @@ const KeySignatureCluster = ({ sign, accidentals }) => {
 
   return (
     <div className={'key-sig-cluster-container'}>
-      {styles.slice(0,accidentals).map((style) => {
-        return <img src={accidentalImage} className={'accidental-image'} style={style} />
+      {styles.slice(0,accidentals).map((style, index) => {
+        return <img src={accidentalImage} className={'accidental-image'} style={style} alt={'note'} key={index} />
       })}
     </div>
   )

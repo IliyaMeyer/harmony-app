@@ -38,8 +38,14 @@ const WorkArea = ({ settings, barNotes }) => {
 
   return (
     <div className={'work-area-container'}>
-      {barNotes.map((bars) => {
-        return <Stave timeSignature={timeSignature} keySignature={keySignature} bars={bars} pitLength={getPitLength()} />
+      {barNotes.map((bars, index) => {
+        return <Stave
+          timeSignature={timeSignature}
+          keySignature={keySignature}
+          bars={bars}
+          pitLength={getPitLength()}
+          key={index}
+        />
       })}
     </div>
   )

@@ -35,14 +35,14 @@ const NotationLines = () => {
   const buildMainInputArea = () => {
     return (
       <div>
-        {notationMap.map(() => (
-          <div style={getHorizontalLineStyle()} />
+        {notationMap.map((val, index) => (
+          <div style={getHorizontalLineStyle()} key={index} />
           ))
         }
         <div style={getHorizontalLineStyle(true)} />
         <div style={getBlankSpaceStyle()} />
-        {notationMap.map(() => (
-          <div style={getHorizontalLineStyle()} />
+        {notationMap.map((val, index) => (
+          <div style={getHorizontalLineStyle()} key={index} />
         ))
         }
         <div style={getHorizontalLineStyle(true)} />
