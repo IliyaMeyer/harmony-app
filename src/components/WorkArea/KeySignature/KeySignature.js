@@ -8,7 +8,6 @@ const KeySignature = ({ keySigInfo }) => {
 
   const getContainerStyle = () => {
     return {
-      marginLeft: SPACE_THICKNESS,
       marginRight: SPACE_THICKNESS,
       width: (SPACE_THICKNESS + LINE_THICKNESS) * keySigInfo.accidentals
     }
